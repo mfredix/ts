@@ -5,7 +5,7 @@ let's give them what they want: a TypeScript implementation of the Java collecti
   on a nice path. If it crashes and burns you can open source the code and enjoy the open source fame.
   
  
- ## Extras
+## Extras
  
  * Some say that functional is the way to go, and Java has some. A full streams implementation 
  is probably tricky, but some is straightforward, like a ```map()``` function that applies a lambda 
