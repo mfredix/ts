@@ -77,6 +77,6 @@ The track service returns a list of tracks, Barcelona (Spain), Spa Francorchamps
     }
     ```   
 The wing settings are angles, tire is one of "SUPER_SOFT", "SOFT", "HARD" or "RAIN". The most complex setting is 
-the suspension, we have four on the car and they may be adjusted individually. The numbers are 0-100 for now. Many more 
-will be added as the project evolves, parameters for the engine, gearbox etc.
+the suspension, we have four on the car and they may be adjusted individually. The numbers are 0-100 for now. 
+Many more parameters will be added as the project evolves, parameters for the engine, gearbox etc.
 
