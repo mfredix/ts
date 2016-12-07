@@ -55,20 +55,20 @@ The track service returns a list of tracks, Barcelona (Spain), Spa Francorchamps
             "suspension": 
             [
                 {
-                  "stiffness" 90,
-                  "damping" = 47
+                  "stiffness": 90,
+                  "damping": 47
                 },
                 {  
-                  "stiffness" 90,
-                  "damping" = 47
+                  "stiffness": 90,
+                  "damping": 47
                 },
                 {
-                  "stiffness" 90,
-                  "damping" = 47
+                  "stiffness": 90,
+                  "damping": 47
                 },
                 {
-                  "stiffness" 90,
-                  "damping" = 47
+                  "stiffness": 90,
+                  "damping": 47
                 }
                                                 },
             ],
