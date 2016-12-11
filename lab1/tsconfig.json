@@ -9,10 +9,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "sourceMap": true,
-    "baseUrl": "app",
-    "typeRoots": [
-      "node_modules/@types/"
-    ]
+    "baseUrl": "."
   },
   "exclude": [
     "node_modules",

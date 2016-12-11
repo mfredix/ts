@@ -1,46 +1,48 @@
 {
-  "devDependencies": {
-    "@alrra/travis-scripts": "^1.1.1",
-    "apache-server-configs": "2.14.0",
-    "archiver": "^0.21.0",
-    "del": "^2.0.2",
-    "glob": "^6.0.1",
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^3.0.2",
-    "gulp-header": "^1.2.2",
-    "gulp-jscs": "^3.0.1",
-    "gulp-jshint": "^2.0.0",
-    "gulp-load-plugins": "^1.1.0",
-    "gulp-rename": "^1.2.0",
-    "gulp-replace": "^0.5.3",
-    "jquery": "1.12.0",
-    "jshint": "^2.8.0",
-    "jshint-stylish": "^2.0.1",
-    "mocha": "^2.2.4",
-    "normalize.css": "3.0.3",
-    "run-sequence": "^1.0.2"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "h5bp-configs": {
-    "directories": {
-      "archive": "archive",
-      "dist": "dist",
-      "src": "src",
-      "test": "test"
-    }
-  },
-  "homepage": "https://html5boilerplate.com/",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.txt"
-  },
-  "name": "html5-boilerplate",
+  "name": "ts-f1-car-config",
+  "version": "1.0.0",
   "private": true,
+  "description": "ES2015 modules lab3",
   "scripts": {
-    "build": "gulp build",
-    "test": "gulp archive && mocha --reporter spec --timeout 5000"
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
+    "lint": "tslint ./app/**/*.ts -t verbose",
+    "lite": "lite-server",
+    "pree2e": "webdriver-manager update",
+    "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
+    "test-once": "tsc && karma start karma.conf.js --single-run",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   },
-  "version": "5.3.0"
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "systemjs": "0.19.40",
+    "core-js": "^2.4.1"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2",
+    "typescript": "^2.0.10",
+
+    "canonical-path": "0.0.2",
+    "http-server": "^0.9.0",
+    "tslint": "^3.15.1",
+    "lodash": "^4.16.4",
+    "jasmine-core": "~2.4.1",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "4.0.9",
+    "webdriver-manager": "10.2.5",
+    "rimraf": "^2.5.4",
+
+    "@types/node": "^6.0.46",
+    "@types/jasmine": "^2.5.36",
+    "@types/selenium-webdriver": "^2.53.33"
+  },
+  "repository": {}
 }

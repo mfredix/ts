@@ -1,0 +1,38 @@
+<!-- #docregion -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>F1 Car Configurator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+
+    <div class="row">
+        <div>
+
+            <img style="height:80%;width:80%" src="https://pbs.twimg.com/media/CblIiXVUkAAh1r4.jpg">
+
+        </div>
+        <h1>Car configurator</h1>
+
+    </div>
+
+</div>
+
+
+<script>
+    System.import('app').catch(function (err) {
+        console.error(err);
+    });
+</script>
+</body>
+</html>

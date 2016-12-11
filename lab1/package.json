@@ -1,9 +1,8 @@
 {
-  "name": "web-calc",
+  "name": "collections",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "jquery": "^3.1.1",
     "core-js": "^2.4.1"
 
   },
@@ -17,7 +16,7 @@
     "phantomjs-prebuilt": "^2.1.13",
     "tslint": "^3.15.1",
     "typescript": "2.0.7",
-    "@types/jquery": "^2.0.34"
+    "@types/jasmine": "^2.5.36"
   },
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
