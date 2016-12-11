@@ -32,7 +32,7 @@ See [Jasmine](https://jasmine.github.io/) for docs on how to write assertions.
   on all elements and returns a new collection with the transformed values. And so on - 
   the ```Map``` interface in Java has several methods that has been omitted in the provided code, 
   why not add them -loads of fun!
-  * After coding away for a while you perhaps wonder if this was such a good idea; what would a modern 
+ * After coding away for a while you perhaps wonder if this was such a good idea; what would a modern 
   TypeScript collections library look like? Also, how should it inter-operate with the JavaScript standard lib?
  
  If Java collections is not your bag, try the equivalent .NET or your other favourite framework.  
