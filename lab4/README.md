@@ -7,31 +7,6 @@
  
  * Users should be able to vote on their favourite heroes
  * The dashboard's hero display should be based on who has the most votes
-  
-## Noteworthy
- This lab requires a fairly new version of (at least npm) (> 3.0). If you have it 
- installed all is fine, you can compile the TypeScript code by
- ```
-  >npm run tsc
- ```
- and start the server by
- ```
- >npm run lite
- ```
+ 
+ As the other labs there are npm scripts to compile, run tests, run a lite-server and more.
 
-(see the package.json file for the npm scripts available) and then visit 
-
-```
-http://localhost:3000/dashboard
-```
-If you don't have (I don't) a new version of npm you can install it 
-locally by:
- ```
- >npm install npm
- ```
-and to have that version first on your path:
- ```
- >export PATH=$(npm bin):$PATH
- ```
-(All this assumes a unix like environment. Are you on Windows? Well then 
-you are probably up to date with the latest and greatest.)

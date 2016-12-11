@@ -115,5 +115,4 @@ namespace collections {
         entrySet(): Set<Entry<K, V>> ;
 
     }
-
 }

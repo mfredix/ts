@@ -1,9 +1,8 @@
 
-describe("The smoke test ", () => {
+describe("The set implementation ", () => {
 
-    it('shall make karma happy', () => {
+    it('should be able to create an empty set', () => {
         expect(true).toBe(true);
-        console.log('hej hopp gummi...')
     });
 
 });

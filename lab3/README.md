@@ -12,6 +12,9 @@ you realize that this is far more complex than you expected and time is short...
 So you need to get up to speed and develop a prototype, and you decide to 
 go all in on ES 2015 modules.
 
+The web app projects has lite-server as lab2, but also uses [SystemJS](https://github.com/systemjs/systemjs) 
+for module loading. Skeletons for two modules have been implemented (not much but they load see [main.ts](app/main.ts)). 
+
 ## Design of Prototype
 The web app should handle:
   
@@ -27,26 +30,29 @@ with the data sources. For the prototype you will need to stub the services:
 The track service returns a list of tracks, Barcelona (Spain), Spa Francorchamps (Belgium) and 
     Suzuka (Japan). The JSON should be something like:
     
-    ``` 
+``` 
     {
         "name": "Barcelona",
         "country": "Spain"
     }
-    ``` 
+``` 
+    
  The weather service returns, at least for the prototype, a fixed set of 
      descriptors (SUNNY, CLOUDY, DRIZZLE, RAIN, HEAVY RAIN) and a temperature:
      
  
-    ``` 
+``` 
     {
         "conditions": "SUNNY",
         "temperature": 28
     }
-    ``` 
+``` 
+    
   Enzo will return a car configuration, this will be complex because there are 
   many things you can adjust on a F1 car, but for the prototype we will use front and back wing 
   setting, the suspension and tires to use. Something like
-    ``` 
+  
+``` 
     {
         "configuration": {
         
@@ -75,7 +81,7 @@ The track service returns a list of tracks, Barcelona (Spain), Spa Francorchamps
             "tire": "SOFT"
         }
     }
-    ```   
+```   
 The wing settings are angles, tire is one of "SUPER_SOFT", "SOFT", "HARD" or "RAIN". The most complex setting is 
 the suspension, we have four on the car and they may be adjusted individually. The numbers are 0-100 for now. 
 Many more parameters will be added as the project evolves, parameters for the engine, gearbox etc.

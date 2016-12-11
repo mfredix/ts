@@ -3,8 +3,7 @@ module.exports = function (config) {
         basePath: '',
         frameworks: ['jasmine'],
         files: [
-            {pattern: '**/*.js.map', included: false},
-            'src/test/ts/**/*.js'
+            {pattern: '**/*.js.map', included: false}
         ],
         exclude: [],
         reporters: ['progress'],
