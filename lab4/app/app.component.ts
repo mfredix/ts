@@ -3,6 +3,7 @@
 import { Component }          from '@angular/core';
 
 @Component({
+  moduleId: __moduleName,
   selector: 'my-app',
   template: `
     <h1>{{title}}</h1>
