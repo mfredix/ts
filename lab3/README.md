@@ -86,3 +86,10 @@ The wing settings are angles, tire is one of "SUPER_SOFT", "SOFT", "HARD" or "RA
 the suspension, we have four on the car and they may be adjusted individually. The numbers are 0-100 for now. 
 Many more parameters will be added as the project evolves, parameters for the engine, gearbox etc.
 
+## Extras
+
+* TypeScript has built-in support for [React](https://facebook.github.io/react/), if React is your thing you 
+perhaps want to try it with TypeScript.
+* [VueJS](https://vuejs.org/) also plays well with TypeScript (typings are included in the frameworks npm package).
+* [Aurelia](http://aurelia.io/) is another framework that supports TypeScript. 
+* [Angular2](https://angular.io/) is written in TypeScript from scratch. Lab 4 is all about Angular2!
