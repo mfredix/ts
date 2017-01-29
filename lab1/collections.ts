@@ -1,5 +1,5 @@
 /**
- * For details:
+ * For details on how these interfaces work in Java:
  * http://docs.oracle.com/javase/8/docs/api/java/util/package-summary.html
  * https://docs.oracle.com/javase/tutorial/collections/
  *
@@ -9,15 +9,19 @@ namespace collections {
     /**
      * An interface for visiting each entry in a collection
      */
-    interface Iterator<E> {
+    export interface Iterator<E> {
         hasNext(): boolean;
         next(): E;
+    }
+
+    export interface Iterable<T> {
+        iterator(): Iterator<T>;
     }
 
     /**
      * A bunch of objects
      */
-    interface Collection<E> extends Iterable<E> {
+    export interface Collection<E> extends Iterable<E> {
 
         size(): number;
 
@@ -48,13 +52,13 @@ namespace collections {
     /**
      * A collection with set semantics
      */
-    interface Set<E> extends Collection<E> {
+    export interface Set<E> extends Collection<E> {
     }
 
     /**
      * A collection with indices
      */
-    interface List<E> extends Collection<E> {
+    export interface List<E> extends Collection<E> {
 
         addAllAtIndex(index: number, col: Collection<E>): boolean;
 
@@ -78,7 +82,7 @@ namespace collections {
     /**
      * A key value pair
      */
-    interface Entry<K,V> {
+    export interface Entry<K,V> {
 
         getKey(): K;
 
@@ -88,7 +92,7 @@ namespace collections {
     /**
      * A set of keys mapping to values
      */
-    interface Map<K,V> {
+    export interface Map<K,V> {
 
         size(): number;
 
@@ -115,4 +119,19 @@ namespace collections {
         entrySet(): Set<Entry<K, V>> ;
 
     }
+
+
+    // Put your implementations below.
+    // You can even put some code here to try your implementations, run it by
+    // node collections.js
+    // or:
+    // nodejs collections.js
+    // depending on system
+    console.log('Hi from collections namespace!');
+
+    // For your collections classes, maybe something like:
+    //
+    //export class ArrayList<E> implements List<E> {
+    //}
+
 }
