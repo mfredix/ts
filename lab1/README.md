@@ -5,6 +5,10 @@ let's give them what they want: a TypeScript implementation of the Java collecti
   on a nice path. If it crashes and burns you can open source the code and enjoy the open source fame.
   
 A not totally reliable colleague even helped you by proposing the equivalent interfaces, see [collections.ts](collections.ts).
+
+Note that this lab is about container classes, where generics are natural. If you come from a 
+pure JavaScript (or other dynamically typed language) background you probably want to have a look at the 
+documentation, see [Generics](https://www.typescriptlang.org/docs/handbook/generics.html).   
   
 Feel free to comment out methods if you think there are to many. You can always return to them later.
    
